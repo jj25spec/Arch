@@ -81,3 +81,26 @@ h1{color:#ff1493;}
   text-shadow:0 0 20px #ff69b4;
   font-size:36px;
 }
+/* ===== INDEX THEME ===== */
+.index-bg{
+  background:linear-gradient(135deg,#ff5f9e,#ffc3d9);
+}
+
+.index-card{
+  background:rgba(255,255,255,0.18);
+}
+
+/* Pretty Elliptical Buttons */
+.glow-btn{
+  padding:14px 45px;
+  border-radius:60px;
+  background:linear-gradient(45deg,#ff2f92,#ff9acb);
+  box-shadow:0 0 25px rgba(255,100,180,.9);
+  font-weight:500;
+}
+
+/* ===== COLLAGE / HEART PAGE THEME ===== */
+.heart-bg{
+  background:linear-gradient(135deg,#ff4d88,#ffb6d5);
+}
+
