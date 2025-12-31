@@ -1,106 +1,68 @@
 body{
-  background:#ffe6f2;
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  overflow-y:auto;
+}
+
+.page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+}
+
+.card{
+  background:rgba(255,255,255,0.18);
+  padding:40px;
+  border-radius:25px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 40px rgba(255,255,255,.4);
   text-align:center;
-  font-family:cursive;
+  animation:fade 1.5s;
 }
 
-h1{color:#ff1493;}
-
-.hero-img{
-  width:230px;
-  border-radius:20px;
-  box-shadow:0 0 20px pink;
-}
-
-.btn{
-  background:#ff69b4;
-  padding:10px 20px;
-  border-radius:20px;
-  color:white;
-  text-decoration:none;
-  display:inline-block;
-  margin:10px;
-}
-
-.music-btn{background:#ff69b4;border:none;padding:10px 20px;border-radius:20px;color:white;}
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-  padding:20px;
-}
-
-.gallery img{
-  width:100%;
-  border-radius:15px;
-  box-shadow:0 0 10px pink;
-}
-
-.watermark{
-  position:fixed;
-  bottom:10px;
-  right:15px;
-  opacity:0.4;
-}
-.collage{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-  padding:20px;
-}
-
-.collage img{
-  width:100%;
-  border-radius:15px;
-  animation: zoom 3s infinite alternate;
-}
-
-@keyframes zoom{
-  from{transform:scale(1);}
-  to{transform:scale(1.1);}
-}
-
-.final-bg{
-  background:black;
-  color:white;
-}
-
-.popup{
-  margin-top:120px;
-  animation: pop 2s;
-}
-
-@keyframes pop{
-  from{transform:scale(0);}
-  to{transform:scale(1);}
-}
-
-.glow{
-  color:#ff69b4;
-  text-shadow:0 0 20px #ff69b4;
-  font-size:36px;
-}
-/* ===== INDEX THEME ===== */
 .index-bg{
   background:linear-gradient(135deg,#ff5f9e,#ffc3d9);
 }
 
-.index-card{
-  background:rgba(255,255,255,0.18);
+.index-card h1{
+  text-align:center;
+  font-size:2.8rem;
 }
 
-/* Pretty Elliptical Buttons */
+.index-photos img{
+  width:70px;
+  margin:8px;
+  border-radius:12px;
+  box-shadow:0 0 10px #fff;
+}
+
+/* 💖 Pretty Elliptical Button */
 .glow-btn{
+  display:inline-block;
+  margin-top:25px;
   padding:14px 45px;
   border-radius:60px;
   background:linear-gradient(45deg,#ff2f92,#ff9acb);
+  color:white;
+  text-decoration:none;
+  font-size:1.1rem;
   box-shadow:0 0 25px rgba(255,100,180,.9);
-  font-weight:500;
+  animation:pulse 2s infinite;
 }
 
-/* ===== COLLAGE / HEART PAGE THEME ===== */
+/* 💕 Heart Collage Theme */
 .heart-bg{
   background:linear-gradient(135deg,#ff4d88,#ffb6d5);
 }
 
+@keyframes fade{
+  from{opacity:0;transform:scale(.8);}
+  to{opacity:1;transform:scale(1);}
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 15px #ff2f92;}
+  50%{box-shadow:0 0 35px #ff9acb;}
+  100%{box-shadow:0 0 15px #ff2f92;}
+}
